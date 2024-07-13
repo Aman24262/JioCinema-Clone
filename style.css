@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+}
+
+.section-p1{
+    padding: 1rem 2rem;
+}
+
+header, .sliderbar-items {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #000;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar .nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+}
+
+.navbar .nav-left h2{
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar .premium{
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid goldenrod;
+    border-radius: 1.5rem;
+    color: gold;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+#text-deco{
+    text-decoration: none;
+}
+
+.navbar .nav-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.navbar .nav-center a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #fff;
+}
+
+.navbar .nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+
+
+.navbar .nav-right input{
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem ;
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar .nav-right button{
+    padding: 0.3rem 0.5rem;
+    color: #fff;
+    background: #000;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.navbar .nav-right .user{
+    background: #e6119f;
+    border: none;
+    font-size: 2rem;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.section-separator{
+    height: 1px;
+    width: 100%;
+    background: grey;
+}
+
+.sliderbar .sliderbar-items{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    overflow-x: auto;
+    transition: 0.3 ease;
+    scrollbar-width: none;
+}
+
+.sliderbar .sliderbar-items .sl-btn:hover,
+.sliderbar .sliderbar-items .sl-btn.active2{
+    color: #000;
+    background: #fff;
+}
+
+.sliderbar .sliderbar-items .sl-btn{
+    padding: 0.4rem 0.7rem;
+    border: none;
+    border-radius: 1rem;
+    background: #222;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.slide{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    margin-top: 3rem;
+}
+
+.slide div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+    flex: none;
+}
+
+.slide div img{
+    width: 70rem;
+    height: 39.2rem;
+    cursor: pointer;
+}
+
+.colors{
+    margin: 1rem 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.colors img{
+    height: 8rem;
+    cursor: pointer;
+}
+
+.spotlight h1{
+    color: #fff;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.spotlight .images img{
+    height: 20rem;
+    cursor: pointer;
+}
+
+.hot h1{
+    color: #fff;
+}
+
+.right{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.right img{
+    cursor: pointer;
+}
+
+.fresh .lang-btn .l-btn{
+    padding: 0.4rem 0.7rem;
+    border: none;
+    border-radius: 1rem;
+    background: #222;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.fresh h1{
+    color: #fff;
+}
+
+.episode{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.episode button{
+    padding: 0.3rem 0rem;
+    background: #1759e9;
+    border: none;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.lang-btn {
+    margin-top: 1rem;
+}
+
+.fresh .lang-btn .l-btn:hover,
+.fresh .lang-btn .l-btn.active3{
+    color: #000;
+    background: #fff;
+}
+
+.fresh .fresh-img{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    cursor: pointer;
+}
+
+.movies h1{
+    color: #fff;
+}
+
+.movies-images{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.movies-images img{
+    cursor: pointer;
+}
+
+.sports h1{
+    color: #fff;
+}
+
+.sports-images{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.sports-images img{
+    cursor: pointer;
+}
+
+.crime h1{
+    color: #fff;
+}
+
+.crime-images{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.crime-images img{
+    cursor: pointer;
+}
+
+.fresh .elvish-img{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    cursor: pointer;
+}
+
+
+.footer{
+    margin-top: 2rem;
+    background: #222;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-left{
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-left .foot-left-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.foot-left-1 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.foot-left-1 .head{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer .footer-right{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 3rem;
+    margin-left: 30rem;
+}
+
+.footer .footer-right .foot-right-1{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.icons{
+    margin-top: 0.7rem;
+}
+
+.icons button{
+    padding: 0.8rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.icons img{
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #363636;
+}
+
+.copyright h3{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.copyright img{
+    height: 3rem;
+}
+
+/* sorry-page */
+
+.sorry {
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.sorry img{
+    height: 20rem;
+}
+
+.sorry h1{
+    font-size: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.sorry h3{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 500px){
+
+    .section-p1{
+        padding: 0.3rem 0.5rem;
+    }
+
+    .navbar{
+        display: flex;
+        gap: 0.1rem;
+    }
+
+    .navbar h2{
+        display: none;
+    }
+    .navbar .logo{
+        height: 30px;
+        width: 30px;
+    }
+    
+    
+    .navbar .premium{
+        font-size: 0.5rem;
+        padding: 0.1rem 0.1rem;
+        gap: 0.1rem;
+    }
+    
+    .navbar .nav-center{
+        display: none;
+    }
+    
+    .navbar a:hover,
+    .navbar a.active{
+        color: #fff;
+    }
+
+    .nav-r{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.3rem;
+    }
+    
+    .navbar .nav-right{
+        gap: 0.6rem;
+        margin-right: 0.3rem;
+    }
+    
+    
+    .navbar .nav-right input{
+        padding: 0.3rem 0.5rem;
+        font-size: 0.5rem;
+    }
+    
+    .navbar .nav-right button{
+        padding: 0.2rem 0.3rem;
+        border-radius: 1rem;
+        font-size: 0.4rem;
+    }
+    
+    .navbar .nav-right .user{
+        font-size: 0.7rem;
+        padding: 0.2rem;
+    }
+
+    .fresh .lang-btn .l-btn{
+        padding: 0.4rem 0.7rem;
+        font-size: 0.5rem;
+    }
+
+    .fresh .lang-btn .l-btn{
+        padding: 0.3rem 0.6rem;
+        font-size: 0.4rem;
+    }
+
+    .fresh .fresh-img{
+        padding-left: none;
+    }
+
+    #creators-h1{
+        font-size: 1.5rem;
+    }
+    
+
+    .footer{
+        margin-top: 1rem;
+        padding: 0.6rem;
+    }
+    
+    .footer .footer-left .foot-left-1{
+        gap: 0.3rem;
+    }
+    
+    .foot-left-1 a{
+        font-size: 0.4rem;
+    }
+    
+    .foot-left-1 .head{
+        margin-bottom: 0.5rem;
+        font-size: 0.7rem;
+    }
+    
+    .footer .footer-right{
+        gap: 0.7rem;
+        margin-left: 1.5rem;
+    }
+    
+    .footer .footer-right .foot-right-1{
+        font-size: 0.4rem;
+    }
+    
+    .icons{
+        margin-top: 0.7rem;
+    }
+    
+    .icons button{
+        padding: 0.3rem 0.4rem;
+        font-size: 0.5rem;
+    }
+    
+    .icons img{
+        height: 1rem;
+    }
+
+    .copyright h3{
+        color: #fff;
+        font-size: 0.7rem;
+    }
+    
+    .copyright img{
+        height: 1.5rem;
+    }
+
+    /* sorry-details */
+
+    .sorry {
+        margin-top: 1rem;
+    }
+    
+    .sorry img{
+        height: 10rem;
+    }
+    
+    .sorry h1{
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .sorry h3{
+        padding-left: 0.3rem;
+        font-size: 0.8rem;
+        margin-top: 0.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+}
